@@ -29,7 +29,7 @@ The pedal is based on a Raspberry Pi Zero.   This is because USB host audio is r
 
 The wiring schematic.   
 
-<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Proto%20Bonnet" width="500" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Proto%20Bonnet.jpg" width="500" >
 
 # Installation
 
