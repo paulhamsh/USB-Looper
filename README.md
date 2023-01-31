@@ -25,7 +25,7 @@ It also needs a USB OTG cable plugged into the 'USB' input of the Pi Zero - to a
 
 This build uses an Adafruit Proto Bonnet to do the wiring for the switches, rotary controller and OLED.   
 
-** Currently the rotary controller and footswitch 0 don't do anything **
+**Currently the rotary controller and footswitch STOP don't do anything**
 
 # Instructions
 
@@ -36,7 +36,7 @@ Turn on (plus in USB power cable)
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Controls.jpg" >
 
-The footswitchs are STOP, then Tracks 1 to 4.   
+The footswitches are STOP, then Tracks 1 to 4.   
 
 The OLED will now show the following:
 
