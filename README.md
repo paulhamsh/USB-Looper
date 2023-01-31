@@ -18,6 +18,22 @@ The pedal is based on a Raspberry Pi Zero.   This is because USB host audio is r
 
 It also needs a USB OTG cable plugged into the 'USB' input of the Pi Zero - to act as the UBS host connection.    
 
+This build uses an Adafruit Proto Bonnet to do the wiring for the switches, rotary controller and OLED.   
+
+** Currently the rotary controller doesn't do anything **
+
+# Instructions
+
+Plus in the amp into the OTG cable (before turning on)   
+Turn on (plus in USB power cable)   
+
+The OLED will now show the following:
+
+
+
+
+
+
 # Pictures
 
 ![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup2.jpg)
