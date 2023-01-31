@@ -50,6 +50,7 @@ raspi-config
 
 1 System Options   
 - S1 Wireless Lan - set SSID and passphrase   
+
 3 Interface options   
 - I2 SSH - activate   
 - I5 I2C - activate   
