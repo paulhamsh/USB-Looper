@@ -21,13 +21,11 @@ The pedal is based on a Raspberry Pi Zero.   This is because USB host audio is r
 ![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup.jpg)
 
         
-<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Top.jpg" width="400" >
-
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Top.jpg)
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Edge.jpg)
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside.jpg)
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20Pi.jpg)
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20OLED.jpg)
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Top.jpg" width="800" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Edge.jpg" width="800" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside.jpg" width="800" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20Pi.jpg" width="800" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20OLED.jpg" width="800" >
 
 The wiring schematic.   
 
