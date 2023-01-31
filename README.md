@@ -18,7 +18,7 @@ The pedal is based on a Raspberry Pi Zero.   This is because USB host audio is r
 
 # Pictures
 
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup.jpg)
+![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup2.jpg)
 
         
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Top.jpg" width="800" >
