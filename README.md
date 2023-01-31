@@ -32,7 +32,7 @@ This build uses an Adafruit Proto Bonnet to do the wiring for the switches, rota
 Plus in the amp into the OTG cable (before turning on)   
 Turn on (plus in USB power cable)   
 
-<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Controls2.png" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Control3.jpg" >
 
 The footswitches are STOP, then Tracks 1 to 4.   
 
