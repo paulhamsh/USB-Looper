@@ -33,71 +33,85 @@ The wiring schematic.
 
 # Installation
 
+Create USB Stick with Raspberry Pi OS Lite 32 bit
+Boot
+
+In config screen:
+- Create your user: {user} {password}
+- Set locale
+Exit config
+
+Log in
+
 ```
-# Create USB Stick with Raspberry Pi OS Lite 32 bit
-
-# Boot
-
-# In config screen:
-# - Create your user: {user} {password}
-# - Set locale
-# Exit config
-
-# Log in
-
-#
-
 sudo bash
 raspi-config
+```
 
-# 1 System Options
-# S1 Wireless Lan - set SSID and passphrase
-# 3 Interface options
-# I2 SSH - activate
-# I5 I2C - activate
-# I6 Serial Port - activate
+1 System Options
+- S1 Wireless Lan - set SSID and passphrase
+3 Interface options
+- I2 SSH - activate
+- I5 I2C - activate
+- I6 Serial Port - activate
 
+```
 vi /boot/config.txt
-# find dtparam=i2c_arm=on and add 
+```
+
+Find dtparam=i2c_arm=on and add 
+
+```
 dtparam=i2c_arm=on, i2c_arm_baudrate=1000000
+```
 
+```
 ifconfig
-# Will show the IP address, keep a note of this
+```
+Will show the IP address, keep a note of this
 
+```
 apt update
 apt full-upgrade
+```
 
-# Check for i2c SSD1306
+Check for i2c SSD1306
+
+```
 apt-get install i2c-tools
 i2cdetect -y 1
+```
 
-# Will show '3c'
+Should show ```3c```
 
-# Install SSD1306 for Python
-
+Install SSD1306 for Python
+```
 apt install python3-pip 
-### apt install python3-setuptools
-### apt install python3-wheel
-
-
 python -m pip install --upgrade pip setuptools wheel
-# This will take a long time
+```
 
-### apt install git
+This will take a long time
 
+```
 pip3 install Adafruit-SSD1306
 pip3 install Adafruit-GPIO
+```
 
-## If you have the SSD1306 examples, edit them to change RST to RST = None and use 128x64 display
+Install sound librarys and modules
 
-# Get ready for the Looper program
+
+```
 pip3 install sounddevice soundfile numpy keyboard
 
 apt-get install libportaudio2 
 apt-get install libasound2-dev
 apt-get install libsndfile1
+```
 
-# Run the looper program
+
+Run the looper program
+
+```
 sudo python looper7.py
 ```
 
@@ -107,22 +121,30 @@ sudo python looper7.py
 ```
 vi /boot/config.txt
 disable_splash=1
-#dtoverlay=pi3-disable-bt
 boot_delay=0
+```
 
-
-
-
-
-### THIS ONE IS BEST!
+```
 vi /boot/cmdline.txt
 console=serial0,115200 root=PARTUUID=3b65aa5f-02 rw rootfstype=ext4 fsck.repair=yes quiet rootwait
+```
+
+Repoint init from systemd to busybox.   
+
+```
 ln -s /usr/bin/busybox /usr/sbin/init
 rm /usr/sbin/init
 ls -all /usr/sbin/init
+```
 
+And create a new inittab.   
+
+```
 vi /etc/inittab
+```
 
+
+```
 ::sysinit:/bin/mount -t proc proc /proc
 ::sysinit:/bin/mount -t sysfs sysfs /sys
 ::sysinit:/bin/mount -o rw /dev/mmcblk0p1 /boot
@@ -132,7 +154,7 @@ vi /etc/inittab
 ::sysinit:/usr/sbin/modprobe brcmfmac
 console::respawn:-/bin/sh
 console::once:echo WELCOME TO LOOPER
-console::once:/usr/bin/python /home/paul/looper/hello.py
+console::once:/usr/bin/python /home/paul/looper/looper7.py
 ::shutdown:/bin/umount -a -r
 ::restart:/sbin/init
 ::ctrlaltdel:/sbin/reboot
