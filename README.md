@@ -24,12 +24,12 @@ The pedal is based on a Raspberry Pi Zero.   This is because USB host audio is r
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Top.jpg" width="800" >
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Edge.jpg" width="800" >
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside.jpg" width="800" >
-<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20Pi.jpg" width="800" >
-<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20OLED.jpg" width="800" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20Pi.jpg" width="400" >
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside%20OLED.jpg" width="400" >
 
 The wiring schematic.   
 
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Proto%20Bonnet.jpg)
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Proto%20Bonnet" width="500" >
 
 # Installation
 
