@@ -29,9 +29,13 @@ Turn on (plus in USB power cable)
 
 The OLED will now show the following:
 
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic1.jpg" width="400" >
 
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic2.jpg" width="400" >
 
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic3.jpg" width="400" >
 
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic4.jpg" width="400" >
 
 
 # Pictures
