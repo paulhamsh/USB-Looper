@@ -11,8 +11,13 @@ Examples of amps that can do this are:
 
 The benefit is that you can record the processed audio, and when recording the next loop / overdub, you can use different effects.  Using a normal looper with a practice amp such as these means that the loops play back into the current amp effect setting.  
 
+The pedal is more like a 4 track recorder than a looper - you don't overdub, you record on to new tracks.   
+Tracks are not stored on SD card in this version.    
+
 This is a diagram showing the setup - guitar into the amp, amp USB into the looper.   
 The amp must be capable of USB out and USB in simultaneously.   
+
+![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup2.jpg)
 
 The pedal is based on a Raspberry Pi Zero.   This is because USB host audio is required, and I can't find a microcontroller (ESP32 / Pi 2040 / Arduino / Teensy) that has USB host audio. The TinyUSB library doesn't support it yet. But the Pi, being a Linux machine, has full USB Host capability.  The only downside is slow boot times which can be partially fixed by not running via systemd - see the boot time improvement section later.   
 
@@ -20,27 +25,40 @@ It also needs a USB OTG cable plugged into the 'USB' input of the Pi Zero - to a
 
 This build uses an Adafruit Proto Bonnet to do the wiring for the switches, rotary controller and OLED.   
 
-** Currently the rotary controller doesn't do anything **
+** Currently the rotary controller and footswitch 0 don't do anything **
 
 # Instructions
 
+
 Plus in the amp into the OTG cable (before turning on)   
 Turn on (plus in USB power cable)   
+
+The footswitch numbers are ```0 1 2 3 4``` - with numbers 1 to 4 reflecting the track.   
 
 The OLED will now show the following:
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic1.jpg" width="400" >
 
+
+Press footswich 1 to start track 1 recording.  
+
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic2.jpg" width="400" >
+
+Press footswitch 1 again to stop track 1 recording and start playback.   
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic3.jpg" width="400" >
 
+Press footswitch 2 to start track 2 recording...and so on.   
+
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic4.jpg" width="400" >
+
+A long press on footswitch 1 to 4 will delete the contents of that track.   
+ 
 
 
 # Pictures
 
-![bonnet wiring](https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup2.jpg)
+
 
         
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Top.jpg" width="800" >
