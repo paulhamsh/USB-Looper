@@ -27,12 +27,10 @@ This build uses an Adafruit Proto Bonnet to do the wiring for the switches, rota
 
 **Currently the rotary controller and footswitch STOP don't do anything**
 
-# Instructions
-
+# How to use the pedal
 
 Plus in the amp into the OTG cable (before turning on)   
 Turn on (plus in USB power cable)   
-
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Controls2.png" >
 
@@ -41,7 +39,6 @@ The footswitches are STOP, then Tracks 1 to 4.
 The OLED will now show the following:
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic1.jpg" width="400" >
-
 
 Press footswich Track 1 to start track 1 recording.  
 
@@ -61,11 +58,8 @@ A long press on footswitch Track 1 to Track 4 will delete the contents of that t
  
 
 
-# Pictures
-
-
-
-        
+# Hardware build
+      
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Top.jpg" width="800" >
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Edge.jpg" width="800" >
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Inside.jpg" width="800" >
