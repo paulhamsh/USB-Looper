@@ -1,0 +1,14 @@
+::sysinit:/bin/mount -t proc proc /proc
+::sysinit:/bin/mount -t sysfs sysfs /sys
+::sysinit:/bin/mount -o rw /dev/mmcblk0p1 /boot
+::sysinit:/usr/sbin/modprobe i2c_bcm2835
+::sysinit:/usr/sbin/modprobe i2c_dev
+::sysinit:/usr/sbin/modprobe snd-usb-audio
+::sysinit:/usr/sbin/modprobe brcmfmac
+console::respawn:-/bin/sh
+console::once:echo WELCOME TO LOOPER
+console::once:/usr/bin/python /home/paul/looper/hello.py
+::shutdown:/bin/umount -a -r
+::restart:/sbin/init
+::ctrlaltdel:/sbin/reboot
+

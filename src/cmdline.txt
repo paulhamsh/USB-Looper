@@ -1,0 +1,2 @@
+console=serial0,115200 root=PARTUUID=3b65aa5f-02 rw rootfstype=ext4 fsck.repair=yes quiet rootwait
+
