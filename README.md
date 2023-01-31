@@ -45,6 +45,8 @@ Press footswich 1 to start track 1 recording.
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic2.jpg" width="400" >
 
 Press footswitch 1 again to stop track 1 recording and start playback.   
+The overall loop length is dictated by the length of loop 1.   
+The bar at the bottom shows progress in playing back loop 1 - so showing how long the loop is for any other tracks.   
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic3.jpg" width="400" >
 
