@@ -48,6 +48,8 @@ sudo bash
 raspi-config
 ```
 
+And set the following:   
+
 1 System Options   
 - S1 Wireless Lan - set SSID and passphrase   
 
