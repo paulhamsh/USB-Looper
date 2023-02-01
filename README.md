@@ -82,10 +82,15 @@ Exit config
 
 Log in   
 
-Set up a new config using ```raspi-config```    
+Create a new users and then set up a new config using ```raspi-config```    
 
 ```
 sudo bash
+
+useradd -m loopuser
+passwd loopuser
+cd /home/loopuser
+
 raspi-config
 ```
 
@@ -162,8 +167,10 @@ apt-get install libsndfile1
 Get this code from github.   
 
 ```
+apt install git
+
 git clone https://github.com/paulhamsh/USB-Looper
-cd USB-Looper
+cd USB-Looper/src
 ```
 
 Run the looper program
@@ -215,7 +222,7 @@ vi /etc/inittab
 ::sysinit:/usr/sbin/modprobe brcmfmac
 console::respawn:-/bin/sh
 console::once:echo WELCOME TO LOOPER
-console::once:/usr/bin/python /home/paul/USB-Looper/looper7.py
+console::once:/usr/bin/python /home/paul/USB-Looper/src/looper7.py
 ::shutdown:/bin/umount -a -r
 ::restart:/sbin/init
 ::ctrlaltdel:/sbin/reboot
