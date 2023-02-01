@@ -89,6 +89,7 @@ Exit config
 Log in   
 
 Create a new user, and then set up a new config using ```raspi-config```    
+We need this to have SSH activated as it will be headless once in a pedal.   
 
 ```
 sudo bash
@@ -136,6 +137,9 @@ Update the whole system
 apt update
 apt full-upgrade
 ```
+
+At this point you can unplug any monitor and use the Pi headless via SSH - log int via something like PuTTY.   
+Also you can use a serial terminal if you prefer.   
 
 Install the required i2c tools     
 
