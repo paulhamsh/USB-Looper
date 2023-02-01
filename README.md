@@ -4,7 +4,7 @@ This is to record and replay processed guitar sounds, rather than the raw guitar
 
 The benefit is that you can record the processed audio, and when recording the next loop / overdub, you can use different effects.  Using a normal looper with a practice amp such as these means that the loops play back into the current amp effect setting. 
 
-<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup2.jpg">
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup.jpg">
 
 The amp must send processed guitar to the looper pedal over USB and receive audio back from the looper pedal over USB.   
 
