@@ -2,7 +2,7 @@
 A guitar looper pedal which uses a USB audio connection to an amplifier for all audio - no direct guitar input.   
 This is to record and replay processed guitar sounds, rather than the raw guitar input, to enable using different effects on each track.    
 
-The benefit is that you can record the processed audio, and when recording the next loop / overdub, you can use different effects.  Using a normal looper with a practice amp such as these means that the loops play back into the current amp effect setting. 
+The benefit is that you can record the processed audio, and when recording the next loop / overdub, you can use different effects.  Using a normal looper placed before an amp means that the loops play back into the current amp effect setting. 
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup.jpg">
 
