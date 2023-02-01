@@ -90,16 +90,11 @@ Exit config
 
 Log in   
 
-Create a new user, and then set up a new config using ```raspi-config```    
+Set up a new config using ```raspi-config```    
 We need this to have SSH activated as it will be headless once in a pedal.   
 
 ```
 sudo bash
-
-useradd -m loopuser
-passwd loopuser
-cd /home/loopuser
-
 raspi-config
 ```
 
@@ -169,7 +164,7 @@ Install sound libraries and modules
 
 
 ```
-pip3 install sounddevice soundfile numpy keyboard
+pip3 install sounddevice soundfile numpy
 
 apt-get install libportaudio2 
 apt-get install libasound2-dev
@@ -191,7 +186,7 @@ cp USB-Looper/src/Ubuntu-Bold.ttf /opt/looper
 Run the looper program
 
 ```
-sudo python looper7.py
+sudo python /opt/looper/looper7.py
 ```
 
 
@@ -237,7 +232,7 @@ vi /etc/inittab
 ::sysinit:/usr/sbin/modprobe brcmfmac
 console::respawn:-/bin/sh
 console::once:echo WELCOME TO LOOPER
-console::once:/usr/bin/python /home/loopuser/USB-Looper/src/looper7.py
+console::once:/usr/bin/python /opt/looper/looper7.py
 ::shutdown:/bin/umount -a -r
 ::restart:/sbin/init
 ::ctrlaltdel:/sbin/reboot
