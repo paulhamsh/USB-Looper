@@ -140,7 +140,7 @@ apt update
 apt full-upgrade
 ```
 
-At this point you can unplug any monitor and use the Pi headless via SSH - log int via something like PuTTY.   
+At this point you can unplug any monitor and use the Pi headless via SSH - log in via something like PuTTY, using the IP address you captured.   
 Also you can use a serial terminal if you prefer.   
 
 Install the required i2c tools     
