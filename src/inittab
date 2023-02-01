@@ -7,7 +7,7 @@
 ::sysinit:/usr/sbin/modprobe brcmfmac
 console::respawn:-/bin/sh
 console::once:echo WELCOME TO LOOPER
-console::once:/usr/bin/python /home/paul/looper/hello.py
+console::once:/usr/bin/python /opt/looper/looper.py
 ::shutdown:/bin/umount -a -r
 ::restart:/sbin/init
 ::ctrlaltdel:/sbin/reboot
