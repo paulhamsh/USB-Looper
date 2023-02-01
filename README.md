@@ -78,8 +78,10 @@ The wiring schematic.
 
 # Installation
 
+Run all this as root - so ```sudo bash``` each time you log in or reboot.   
+
 Create an SD Card with Raspberry Pi OS Lite 32 bit (follow the instructions on the Raspberry Pi website).   
-Boot it.    
+Boot your Pi.    
 
 In the config screen:   
 - Create your user: {user} {password}    
@@ -180,7 +182,10 @@ Get this code from github.
 apt install git
 
 git clone https://github.com/paulhamsh/USB-Looper
-cd USB-Looper/src
+mkdir /opt/looper
+cp USB-Looper/src/looper7.py /opt/looper
+cp USB-Looper/src/Ubuntu-Bold.ttf /opt/looper
+
 ```
 
 Run the looper program
