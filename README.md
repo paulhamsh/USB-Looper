@@ -34,17 +34,23 @@ Turn on the pedal by plugging in USB power cable.
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Control3.jpg" >
 
-The footswitches are STOP, then Tracks 1 to 4.   
+The footswitches are labelled STOP, then Tracks 1 to 4. (STOP currently doesn't do anything)      
 
-The OLED will now show the following screen.    
+The OLED will now show the following info.   
+Each track has a play and record icon. 
+If the icon is filled then that is currently active. 
+If both are unfilled, then the track is empty.   
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic1.jpg" width="400" >
 
 Press footswich Track 1 to start track 1 recording.  
+The record icon for Track 1 will change to filled.   
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic2.jpg" width="400" >
 
 Press footswitch Track 1 again to stop track 1 recording and start playback.   
+The Track 1 icons will switch to play.   
+
 The overall loop length is dictated by the length of loop 1.   
 The bar at the bottom shows progress in playing back loop 1 - so showing how long the loop is for any other tracks.   
 
