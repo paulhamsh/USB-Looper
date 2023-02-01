@@ -113,17 +113,20 @@ Find dtparam=i2c_arm=on and add
 dtparam=i2c_arm=on, i2c_arm_baudrate=1000000
 ```
 
+Get the IP address for later SSH work   
+
 ```
 ifconfig
 ```
-Will show the IP address, keep a note of this
+
+Update the whole system   
 
 ```
 apt update
 apt full-upgrade
 ```
 
-Check for i2c SSD1306   
+Install the required i2c tools     
 
 ```
 apt-get install i2c-tools
