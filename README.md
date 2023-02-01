@@ -1,6 +1,6 @@
 # USB-Looper
 A guitar looper pedal which uses a USB audio connection to an amplifier for all audio - no direct guitar input.   
-This is to record and replay processed guitar sounds, rather than the input, to enable using different effects on each track.    
+This is to record and replay processed guitar sounds, rather than the raw guitar input, to enable using different effects on each track.    
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup2.jpg">
 
