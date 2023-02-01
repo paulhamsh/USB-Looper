@@ -2,6 +2,8 @@
 A guitar looper pedal which uses a USB audio connection to an amplifier for all audio - no direct guitar input.   
 This is to record and replay processed guitar sounds, rather than the raw guitar input, to enable using different effects on each track.    
 
+The benefit is that you can record the processed audio, and when recording the next loop / overdub, you can use different effects.  Using a normal looper with a practice amp such as these means that the loops play back into the current amp effect setting. 
+
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Setup2.jpg">
 
 The amp must send processed guitar to the looper pedal over USB and receive audio back from the looper pedal over USB.   
@@ -11,8 +13,6 @@ Examples of amps that can do this are:
 - Boss Katana
 
 (The Spark 40 amp has a strange pitch-shift issue with USB which makes it unusable for USB audio)   
-
-The benefit is that you can record the processed audio, and when recording the next loop / overdub, you can use different effects.  Using a normal looper with a practice amp such as these means that the loops play back into the current amp effect setting.  
 
 The pedal is more like a 4 track recorder than a looper - you don't overdub, you record on to new tracks.   
 Tracks are not stored on SD card in this version.    
