@@ -178,15 +178,15 @@ apt install git
 
 git clone https://github.com/paulhamsh/USB-Looper
 mkdir /opt/looper
-cp USB-Looper/src/looper7.py /opt/looper
-cp USB-Looper/src/Ubuntu-Bold.ttf /opt/looper
+cp USB-Looper/src/looper7.py /opt/looper/looper.py
+cp USB-Looper/src/Ubuntu-Bold.ttf /opt/looper/Ubuntu-Bold.ttf
 
 ```
 
 Run the looper program
 
 ```
-sudo python /opt/looper/looper7.py
+sudo python /opt/looper/looper.py
 ```
 
 
@@ -232,7 +232,7 @@ vi /etc/inittab
 ::sysinit:/usr/sbin/modprobe brcmfmac
 console::respawn:-/bin/sh
 console::once:echo WELCOME TO LOOPER
-console::once:/usr/bin/python /opt/looper/looper7.py
+console::once:/usr/bin/python /opt/looper/looper.py
 ::shutdown:/bin/umount -a -r
 ::restart:/sbin/init
 ::ctrlaltdel:/sbin/reboot
