@@ -82,6 +82,8 @@ Exit config
 
 Log in   
 
+Set up a new config using ```raspi-config```    
+
 ```
 sudo bash
 raspi-config
@@ -89,6 +91,7 @@ raspi-config
 
 And set the following:   
 
+```
 1 System Options   
 - S1 Wireless Lan - set SSID and passphrase   
 
@@ -96,6 +99,9 @@ And set the following:
 - I2 SSH - activate   
 - I5 I2C - activate   
 - I6 Serial Port - activate   
+```
+
+Edit the config.txt file   
 
 ```
 vi /boot/config.txt
