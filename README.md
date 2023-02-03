@@ -242,3 +242,43 @@ console::once:/usr/bin/python /opt/looper/looper.py
 ::ctrlaltdel:/sbin/reboot
 ```
 
+# If boot times aren't an issue
+
+You can always add a systemd service as follows.   
+
+Create a shell script to run the looper.   
+
+```
+sudo bash
+vi /opt/looper/start.sh
+```
+
+```
+#!/bin/bash
+python /opt/looper/looper.py
+```
+
+```
+chmod ugoa+x /opt/looper/start.sh
+```
+
+```
+vi /etc/systemd/service/looper.service
+```
+
+```
+[Unit]
+Description=Reboot looper systemd service.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /opt/looper/start.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+chmod chmod u=rw,g=rw,o=r /etc/systemd/system/looper.service
+systemctl enable looper.service
+```
