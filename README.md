@@ -259,7 +259,7 @@ python /opt/looper/looper.py
 ```
 
 ```
-chmod ugoa+x /opt/looper/start.sh
+chmod a+x /opt/looper/start.sh
 ```
 
 ```
