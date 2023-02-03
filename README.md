@@ -24,7 +24,7 @@ It also needs a USB OTG cable plugged into the 'USB' input of the Pi Zero - to a
 
 This build uses an Adafruit Proto Bonnet to do the wiring for the switches, rotary controller and OLED.   
 
-**Currently the rotary controller and footswitch STOP don't do anything**
+**Currently the rotary controller doesn't do anything**
 
 # How to use the pedal
 
@@ -37,8 +37,9 @@ The footswitches are labelled STOP, then Tracks 1 to 4. (STOP currently doesn't 
 
 The OLED will now show the following info.   
 Each track has a play and record icon. 
-If the icon is filled then that is currently active. 
 If both are unfilled, then the track is empty.   
+If the record icon shows then that track is recording.   
+If the play icon shows then that track is playing.   
 
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Pic1.jpg" width="400" >
 
@@ -63,6 +64,9 @@ A long press on footswitch Track 1 to Track 4 will delete the contents of that t
  
 <img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Flow.jpg" >
 
+Pressing the STOP footswitch will stop all playback and reset to the start of all tracks.  
+Another press on STOP will start playback.   
+A long press on STOP will clear all tracks.   
 
 # Hardware build
       
