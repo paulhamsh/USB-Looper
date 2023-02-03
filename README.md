@@ -61,6 +61,7 @@ Press footswitch Track 2 to start track 2 recording...and so on.
 
 A long press on footswitch Track 1 to Track 4 will delete the contents of that track.   
  
+<img src="https://github.com/paulhamsh/USB-Looper/blob/main/pictures/Flow.jpg" >
 
 
 # Hardware build
