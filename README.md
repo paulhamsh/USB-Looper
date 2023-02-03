@@ -182,7 +182,7 @@ apt install git
 
 git clone https://github.com/paulhamsh/USB-Looper
 mkdir /opt/looper
-cp USB-Looper/src/looper7.py /opt/looper/looper.py
+cp USB-Looper/src/looper8.py /opt/looper/looper.py
 cp USB-Looper/src/Ubuntu-Bold.ttf /opt/looper/Ubuntu-Bold.ttf
 
 ```
