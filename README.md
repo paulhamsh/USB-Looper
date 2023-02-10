@@ -282,3 +282,63 @@ WantedBy=multi-user.target
 chmod chmod u=rw,g=rw,o=r /etc/systemd/system/looper.service
 systemctl enable looper.service
 ```
+
+# Setup for Banana Pi M2 Zero
+
+
+Download Armbian 22.11.0-trunk image
+Right click and use Disk Image Write to write to USB
+
+root
+1234
+
+
+sudo bash
+Set up i2c in armbian-config hardware menu
+select    i2c-0 i2c-1 i2c-2
+
+apt update
+apt upgrade 
+
+apt install python3-dev python3-pip
+
+For pillow:
+apt install zlib1g-dev libjpeg62-turbo-dev libfreetype6-dev
+pip3 install Pillow
+
+
+pip3 install Adafruit-Blinka
+pip3 install adafruit-circuitpython-ssd1306
+apt-get install libgpiod2 python3-libgpiod gpiod
+
+
+
+cat hello.py
+
+
+import busio
+import board
+
+import adafruit_ssd1306
+
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+RST = None
+
+i2c = busio.I2C(board.SCL, board.SDA)
+disp = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
+
+disp.fill(0)
+disp.show()
+
+image = Image.new('1', (128, 64))
+draw = ImageDraw.Draw(image)
+
+font = ImageFont.load_default()
+
+draw.text((10, 10), "LOOPER",  font=font, fill = 255)
+        
+disp.image(image)
+disp.show()
