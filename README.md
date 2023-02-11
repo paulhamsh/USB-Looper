@@ -283,7 +283,7 @@ chmod chmod u=rw,g=rw,o=r /etc/systemd/system/looper.service
 systemctl enable looper.service
 ```
 
-# Setup for Banana Pi M2 Zero
+# Base install for Banana Pi M2 Zero
 
 
 Download Armbian 22.11.0-trunk image
