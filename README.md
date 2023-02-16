@@ -283,6 +283,48 @@ chmod chmod u=rw,g=rw,o=r /etc/systemd/system/looper.service
 systemctl enable looper.service
 ```
 
+
+# Use FT232 USB to Serial for connection to Pi Zero
+
+```
+FT232 Connection
+
+FT232                   Pi 
+---- GND  -----------  GND ---- 14     	13	
+---- CTS                   ---- 12 (18)  	11
+---- VCC       /-----  RX  ---- 10 (15)  	9
+---- TX   ----/  /---  TX  ---- 8  (14)	7
+---- RX   ------/      GND ---- 6		5
+---- DTR               5v  ---- 4      	3
+                       5v  ---- 2      	1
+
+RX (FT232) connects to TX (Pi)
+```
+
+# C OLED library
+
+```
+# BCM library first
+wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz 
+tar xvfz bcm2835-1.71.tar.gz
+cd bcm2835-1.71                       
+./configure                   
+make  
+sudo make install
+
+# Then C OLED library
+git clone https://github.com/gavinlyonsrepo/SSD1306_OLED_RPI
+cd SSD1306_OLED_RPI
+sudo make
+
+# Make my code:
+cd splash
+make
+# And check it works
+sudo bin/splash
+```
+
+
 # Base install for Banana Pi M2 Zero
 
 
@@ -292,7 +334,7 @@ Right click and use Disk Image Write to write to USB
 root
 1234
 
-
+```
 sudo bash
 Set up i2c in armbian-config hardware menu
 select    i2c-0 i2c-1 i2c-2
@@ -310,12 +352,13 @@ pip3 install Pillow
 pip3 install Adafruit-Blinka
 pip3 install adafruit-circuitpython-ssd1306
 apt-get install libgpiod2 python3-libgpiod gpiod
+```
 
-
-
+```
 cat hello.py
+```
 
-
+```
 import busio
 import board
 
